@@ -1,0 +1,4 @@
+{
+    // refer to: https://man.archlinux.org/man/shfmt.1.en
+    "shellformat.flag": "--indent 4 --case-indent --binary-next-line --func-next-line --keep-padding --space-redirects"
+}
