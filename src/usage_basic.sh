@@ -98,9 +98,11 @@ function useForWhile()
     done
 
     counter=3
+    SLEEP_TIME=1
     while [ $counter -gt 0 ]; do
         echo ">> while loop $counter"
         # Instead of let expr, prefer (( expr )).
         ((counter--))
+        sleep $SLEEP_TIME
     done
 }

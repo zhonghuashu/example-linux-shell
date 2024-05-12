@@ -9,6 +9,8 @@ Example Linux Shell programming
 ```shell
 cd src
 ./main.sh
+./readline.sh
+./watch_usage.sh
 ```
 
 # Bash VS Code Linux Extension
