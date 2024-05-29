@@ -105,4 +105,12 @@ function useForWhile()
         ((counter--))
         sleep $SLEEP_TIME
     done
+
+    counter=3
+    # Exit when condition is true.
+    until [ $counter -eq 0 ]; do
+        echo ">> until loop $counter"
+        ((counter--))
+        sleep $SLEEP_TIME
+    done
 }
