@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Refer to: https://www.baeldung.com/linux/total-process-cpu-usage
+
 PID=$1
 if [ -z "$PID" ]; then
     echo Usage: $0 PID
