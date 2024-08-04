@@ -37,3 +37,7 @@ echo ""
 echo "#### Usage: for while"
 useForWhile
 echo ""
+
+echo "#### Usage: if else"
+useIfElse
+echo ""
