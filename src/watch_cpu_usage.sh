@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CPU_QUOTA=40
+CPU_QUOTA=30
 watchCpuUsage()
 {
     cpuTotal="$(./vmstat 1 2|tail -1|awk '{print 100-$15}')"
@@ -14,7 +14,7 @@ watchCpuUsage()
     fi
 }
 
-echo "Watch if CPU usage < $CPU_QUOTA%"
+echo "Watch if CPU usage > $CPU_QUOTA%"
 while true; do
     watchCpuUsage
     sleep 1
